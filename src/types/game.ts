@@ -14,4 +14,4 @@ export interface Position {
   
   export const GRID_SIZE = 20;
   export const CELL_SIZE = 20;
-  export const GAME_SPEED = 250;
+  export const GAME_SPEED = 350;
