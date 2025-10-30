@@ -273,17 +273,17 @@ const SnakeGame: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 safe-area-padding">
-      <div className="bg-white rounded-2xl shadow-2xl p-4 md:p-8 w-full max-w-md mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
+    <div className="min-h-screen flex flex-col items-center justify-center safe-area-padding">
+      <div className="bg-white rounded-2xl shadow-2xl md:p-8 w-full max-w-md mx-auto">
+        <h1 className="text-xl md:text-4xl font-bold text-center text-gray-800 mb-2">
           🐍 Snake Game
         </h1>
 
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-4 md:mb-6">
-          <div className="text-xl md:text-2xl font-semibold text-gray-700 text-center sm:text-left">
+          <div className="text-sm md:text-2xl font-semibold text-gray-700 text-center sm:text-left">
             Score: <span className="text-green-600">{gameState.score}</span>
           </div>
-          <div className="flex justify-center gap-2">
+          <div className="md:flex justify-center gap-2 hidden">
             {gameStarted && (
               <>
                 <button
@@ -305,7 +305,7 @@ const SnakeGame: React.FC = () => {
 
         <div className="relative">
           <div
-            className="grid bg-gray-300 border-4 border-gray-400 rounded-lg mx-auto overflow-hidden"
+            className="grid bg-gray-300 border-2 border-gray-400 rounded-lg mx-auto overflow-hidden"
             style={{
               gridTemplateColumns: `repeat(${GRID_SIZE}, ${cellSize}px)`,
               width: gridSizePx,
