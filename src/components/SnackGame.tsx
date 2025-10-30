@@ -39,6 +39,7 @@ const SnakeGame: React.FC = () => {
   const [showMobileControls, setShowMobileControls] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  console.log(showMobileControls)
 
   useEffect(() => {
     const checkMobile = () => {
@@ -353,7 +354,9 @@ const SnakeGame: React.FC = () => {
         )}
         </div>
 
-        {!showMobileControls && gameStarted && !gameState.gameOver && (
+        {
+        // showMobileControls && gameStarted && !gameState.gameOver && 
+        (
           <MobileControls
             onDirectionChange={(direction) => {
               if (gameStarted && !gameState.gameOver && !gameState.isPaused) {
