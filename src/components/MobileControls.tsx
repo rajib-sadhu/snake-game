@@ -11,7 +11,7 @@ const MobileControls: React.FC<MobileControlsProps> = ({ onDirectionChange }) =>
         <div></div>
         <button
           onClick={() => onDirectionChange('UP')}
-          className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-gray-300 active:bg-gray-400 transition-colors"
+          className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-gray-300 active:bg-gray-400 transition-colors"
         >
           ↑
         </button>
@@ -19,14 +19,14 @@ const MobileControls: React.FC<MobileControlsProps> = ({ onDirectionChange }) =>
         
         <button
           onClick={() => onDirectionChange('LEFT')}
-          className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-gray-300 active:bg-gray-400 transition-colors"
+          className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-gray-300 active:bg-gray-400 transition-colors"
         >
           ←
         </button>
-        <div className="w-16 h-16"></div>
+        <div className="w-24 h-24"></div>
         <button
           onClick={() => onDirectionChange('RIGHT')}
-          className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-gray-300 active:bg-gray-400 transition-colors"
+          className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-gray-300 active:bg-gray-400 transition-colors"
         >
           →
         </button>
@@ -34,7 +34,7 @@ const MobileControls: React.FC<MobileControlsProps> = ({ onDirectionChange }) =>
         <div></div>
         <button
           onClick={() => onDirectionChange('DOWN')}
-          className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-gray-300 active:bg-gray-400 transition-colors"
+          className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-gray-300 active:bg-gray-400 transition-colors"
         >
           ↓
         </button>

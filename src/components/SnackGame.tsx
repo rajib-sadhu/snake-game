@@ -353,7 +353,7 @@ const SnakeGame: React.FC = () => {
         )}
         </div>
 
-        {showMobileControls && gameStarted && !gameState.gameOver && (
+        {!showMobileControls && gameStarted && !gameState.gameOver && (
           <MobileControls
             onDirectionChange={(direction) => {
               if (gameStarted && !gameState.gameOver && !gameState.isPaused) {
@@ -363,7 +363,7 @@ const SnakeGame: React.FC = () => {
           />
         )}
 
-        <div className="mt-2 p-2 bg-gray-100 rounded-lg">
+        <div className="mt-2 p-2 bg-gray-100 rounded-lg hidden">
           <h3 className="font-semibold text-gray-700 mb-2 text-center md:text-left">
             Controls:
           </h3>
