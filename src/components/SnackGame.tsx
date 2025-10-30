@@ -279,7 +279,7 @@ const SnakeGame: React.FC = () => {
           🐍 Snake Game
         </h1>
 
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-4 md:mb-6">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-2">
           <div className="text-sm md:text-2xl font-semibold text-gray-700 text-center sm:text-left">
             Score: <span className="text-green-600">{gameState.score}</span>
           </div>
@@ -363,7 +363,7 @@ const SnakeGame: React.FC = () => {
           />
         )}
 
-        <div className="mt-4 md:mt-6 bg-gray-100 p-3 md:p-4 rounded-lg">
+        <div className="mt-2 p-2 bg-gray-100 rounded-lg">
           <h3 className="font-semibold text-gray-700 mb-2 text-center md:text-left">
             Controls:
           </h3>
